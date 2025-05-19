@@ -173,8 +173,9 @@
               <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="px-2"> Yaxuan Li*<sup>1,2</sup> </span>
-              <span class="px-2"> Yichen Zhu*<sup>1</sup> </span>
+              <span class="px-2"> Yichen Zhu*<sup>1</sup>&dagger;</span>
               <span class="px-2">Junjie Wen<sup></sup></span>
+              <span class="px-2">Chaomin Shen<sup></sup></span>
               <span class="px-2">  Yi Xu<sup></sup> </span>
             </div>
 
@@ -182,7 +183,7 @@
                     <span style="color: rgb(145, 143, 143);" class="px-4">1. Midea Group</span>
                     <span style="color: rgb(145, 143, 143);" class="px-4">2. East China Normal University</span>
                     <br>
-                    <span style="color: rgb(145, 143, 143);" class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution,listed in alphabetical order.This work was done during Yaxuan Li's internship in Midea Group.</small></span>
+                    <span style="color: rgb(145, 143, 143);" class="eql-cntrb"><small><br><sup>*</sup>Indicates equal contribution. This work was done during Yaxuan Li's internship in Midea Group.<br><sup>&dagger;</sup>Corresponding author.</small></span>
                     <br>
       
 
@@ -411,7 +412,7 @@
         type="video/mp4">
       </video> -->
       
-      <img src="static/images/overview.png" alt="overview" style="width: 80%; display: block; margin: 0 auto;">
+      <img src="static/images/overview.png" alt="overview" style="width: 50%; display: block; margin: 0 auto;">
       
       <h2 class="subtitle has-text-centered">
       </h2>
@@ -420,63 +421,6 @@
 </section>
 <!-- End teaser video -->
 
-<section class="hero teaser">
-    <div style="text-align: center; margin-bottom: 40px;">
-      <h2 class="title is-3" >Model architecture and evaluation pipeline</h2>
-  
-        </div>
-    <div class="container is-max-desktop" style="text-align: center;">
-      <div class="hero-body">
-        <img style="width: 60%;" src="static/images/pipeline.png" alt="teaser" />
-        <h2 class="subtitle has-text-centered">Top: We extract Policy2Vec
-            embeddings from a pool of robot policies and inject them into a pre-trained video generation model,
-            transforming it into a world model. Bottom: The overall WorldEval pipeline for evaluating policy
-            models using the world simulator.
-        </h2>
-      </div>
-    </div>
-  </section>
-
-<section class="hero teaser">
-  <div style="text-align: center;  margin-bottom: 40px;">
-    <h2 class="title is-3" >Robot and task setup</h2>
-
-      </div>
-  <div class="container is-max-desktop" style="text-align: center;">
-    <div class="hero-body">
-      <img style="width: 60%;" src="static/images/setup.png" alt="teaser" />
-      <h2 class="subtitle has-text-centered">We illustrate the robot setup in the top-left figure. We employ a
-        bimanual ALOHA-style robot equipped with top camera views, a RealSense 457. Other cameras are
-        not used in our work.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div style="text-align: center; ">
-    <h2 class="title is-3" >Experiments Results</h2>
-
-      </div>
-  <div class="container is-max-desktop" style="text-align: center;">
-    <div class="hero-body">
-      <img style="width: 50%;" src="static/images/res1.png" alt="teaser" />
-      <h2 class="subtitle has-text-centered">WorldEval vs. Real-to-Sim evaluation.
-        WorldEval achieves the lowest MMRV (↓) and
-        highest Pearson r (↑), outperforming real-to-sim
-      </h2>
-    </div>
-    <div class="hero-body">
-      <img style="width: 40%;" src="static/images/res2.png" alt="teaser" />
-      <h2 class="subtitle has-text-centered">Policy2Vec versus other encoding
-        methods We report the Pearson correlation (r),
-        MMRV (↓), FID score (↓), and eventual rank
-        across five tasks. Our proposed Policy2Vec
-        achieves the best overall performance.
-      </h2>
-    </div>
-  </div>
-</section>
 
 <div class="mt-8 md:ml-0 ml-1 text-left" >
   <div style="text-align: center; ">
@@ -490,7 +434,7 @@
         <div style="display: flex; justify-content: center;">
             <div style="display: flex; flex-direction: row; align-items: center;">
                 <div style="flex: 1; border-radius: 0.5rem; overflow: hidden; position: relative; aspect-ratio: 16/9;">
-                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/scuess/brown_bowl_pi0_real_frame_0_trimmed.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/scuess/brown_bowl_pi0_real_0519.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
                     <span style="position: absolute; bottom: 0.125rem; right: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">1x</span>
                     <span style="position: absolute; top: 0.125rem; left: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">real world</span>
                 </div>
@@ -501,7 +445,7 @@
                 </div>
                 <!-- <div style="background-color: #48bb78; width: 2px; height: 160px; margin: 0 0rem;"></div> -->
                 <div style="flex: 1; margin-left: 0.5rem; border-radius: 0.5rem; overflow: hidden; position: relative; aspect-ratio: 16/9;">
-                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/scuess/brown_mug_pi0_real_frame_0_trimmed.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/scuess/brown_mug_pi0_real_0519.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
                     <span style="position: absolute; bottom: 0.125rem; right: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">1x</span>
                     <span style="position: absolute; top: 0.125rem; left: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">real world</span>
                 </div>
@@ -516,10 +460,10 @@
         <div style="display: flex; justify-content: center; width: 100%;">
             <div style="display: flex; flex-direction: row; align-items: center; width: 100%;">
                 <div style="background-color: #f0fdf4; margin-right: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
-                    <span><span style="font-weight: bold;">Instruction</span>:Clean table.</span>
+                    <span><span style="font-weight: bold;">Instruction</span>:Clean the table.</span>
                 </div>
                 <div style="background-color: #f0fdf4; margin-left: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
-                    <span><span style="font-weight: bold;">Instruction</span>:CLean table.</span>
+                    <span><span style="font-weight: bold;">Instruction</span>:Clean the table.</span>
                 </div>
             </div>
         </div>
@@ -555,7 +499,7 @@
         <div style="display: flex; justify-content: center; width: 100%;">
             <div style="display: flex; flex-direction: row; align-items: center; width: 100%;">
                 <div style="background-color: #f0fdf4; margin-right: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
-                    <span><span style="font-weight: bold;">Instruction</span>:Collect the toy to the tray</span>
+                    <span><span style="font-weight: bold;">Instruction</span>:Collect the toy to the right tray</span>
                 </div>
                 <div style="background-color: #f0fdf4; margin-left: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
                     <span><span style="font-weight: bold;">Instruction</span>:Place the empty blue cup to the cup mat.</span>
@@ -580,7 +524,7 @@
               </div>
               <!-- <div style="background-color: #48bb78; margin-left: 0.5rem; width: 1px; height: 160px; margin: auto;"></div> -->
               <div style="flex: 1; margin-left: 0.5rem; border-radius: 0.5rem; overflow: hidden; position: relative; aspect-ratio: 16/9;">
-                  <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/scuess/green_mug_pi0_real_frame_0_trimmed.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                  <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/scuess/green_mug_pi0_real_0519.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
                   <span style="position: absolute; bottom: 0.125rem; right: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">1x</span>
                   <span style="position: absolute; top: 0.125rem; left: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">real world</span>
               </div>
@@ -598,7 +542,7 @@
                   <span><span style="font-weight: bold;">Instruction</span>:Pass the red block to the right arm to place it on the blue mat.</span>
               </div>
               <div style="background-color: #f0fdf4; margin-left: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
-                  <span><span style="font-weight: bold;">Instruction</span>:Clean table</span>
+                  <span><span style="font-weight: bold;">Instruction</span>:Clean the table</span>
               </div>
           </div>
       </div>
@@ -613,18 +557,18 @@
         <div style="display: flex; justify-content: center;">
             <div style="display: flex; flex-direction: row; align-items: center;">
                 <div style="flex: 1; border-radius: 0.5rem; overflow: hidden; position: relative; aspect-ratio: 16/9;">
-                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/fail/green_plate_pi0_real_frame_0_fail_trimmed.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/fail/green_plate_dex_real_0519.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
                     <span style="position: absolute; bottom: 0.125rem; right: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">1x</span>
                     <span style="position: absolute; top: 0.125rem; left: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">real world</span>
                 </div>
                 <div style="flex: 1; margin-left: 0.5rem; border-radius: 0.5rem; overflow: hidden; position: relative; aspect-ratio: 16/9;">
-                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/fail/green_plate_pi0_gen_frame_0_video_fail.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/fail/green_plate_dex_gen_0519.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
                     <span style="position: absolute; bottom: 0.125rem; right: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">1x</span>
                     <span style="position: absolute; top: 0.125rem; left: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: red; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">generated video</span>
                 </div>
                 <!-- <div style="background-color: #48bb78; width: 2px; height: 160px; margin: 0 0rem;"></div> -->
                 <div style="flex: 1; margin-left: 0.5rem; border-radius: 0.5rem; overflow: hidden; position: relative; aspect-ratio: 16/9;">
-                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/fail/brown_mug_pi0_real_frame_0_fail_trimmed.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/bussing_table/fail/brown_mug_pi0_real_0519.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
                     <span style="position: absolute; bottom: 0.125rem; right: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">1x</span>
                     <span style="position: absolute; top: 0.125rem; left: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">real world</span>
                 </div>
@@ -639,10 +583,10 @@
         <div style="display: flex; justify-content: center; width: 100%;">
             <div style="display: flex; flex-direction: row; align-items: center; width: 100%;">
                 <div style="background-color: #f0fdf4; margin-right: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
-                    <span><span style="font-weight: bold;">Instruction</span>:Clean table.</span>
+                    <span><span style="font-weight: bold;">Instruction</span>:Clean the table.</span>
                 </div>
                 <div style="background-color: #f0fdf4; margin-left: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
-                    <span><span style="font-weight: bold;">Instruction</span>:Clean table.</span>
+                    <span><span style="font-weight: bold;">Instruction</span>:Clean the table.</span>
                 </div>
             </div>
         </div>
@@ -652,12 +596,12 @@
         <div style="display: flex; justify-content: center;">
             <div style="display: flex; flex-direction: row; align-items: center;">
                 <div style="flex: 1; border-radius: 0.5rem; overflow: hidden; position: relative; aspect-ratio: 16/9;">
-                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/collect_toy/fail/pika_pi0_real_frame_0_fail_trimmed.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/collect_toy/fail/pika_dex_real_0519.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
                     <span style="position: absolute; bottom: 0.125rem; right: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">1x</span>
                     <span style="position: absolute; top: 0.125rem; left: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">real world</span>
                 </div>
                 <div style="flex: 1; margin-left: 0.5rem; border-radius: 0.5rem; overflow: hidden; position: relative; aspect-ratio: 16/9;">
-                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/collect_toy/fail/pika_pi0_gen_frame_0_video_fail.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/collect_toy/fail/pika_dex_gen_0519.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
                     <span style="position: absolute; bottom: 0.125rem; right: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">1x</span>
                     <span style="position: absolute; top: 0.125rem; left: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: red; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">generated video</span>
                 </div>
@@ -678,7 +622,7 @@
         <div style="display: flex; justify-content: center; width: 100%;">
             <div style="display: flex; flex-direction: row; align-items: center; width: 100%;">
                 <div style="background-color: #f0fdf4; margin-right: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
-                    <span><span style="font-weight: bold;">Instruction</span>:Collect the toy to the tray.</span>
+                    <span><span style="font-weight: bold;">Instruction</span>:Collect the toy to the right tray.</span>
                 </div>
                 <div style="background-color: #f0fdf4; margin-left: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
                     <span><span style="font-weight: bold;">Instruction</span>:Place the empty blue cup to the cup mat.</span>
@@ -721,7 +665,7 @@
                   <span><span style="font-weight: bold;">Instruction</span>:Pass the red block to the right arm to place it on the blue mat.</span>
               </div>
               <div style="background-color: #f0fdf4; margin-left: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
-                  <span><span style="font-weight: bold;">Instruction</span>:Clean table.</span>
+                  <span><span style="font-weight: bold;">Instruction</span>:Clean the table.</span>
               </div>
           </div>
       </div>
@@ -729,6 +673,36 @@
 </div>
 </div>
 
+<section class="hero teaser">
+  <div style="text-align: center; ">
+    <h2 class="title is-3" >Experimental Results</h2>
+  </div>
+  <div class="container is-max-desktop" style="text-align: center;">
+    <div class="hero-body">
+      <img style="width: 70%;" src="static/images/f4.png" alt="teaser" />
+      <h2 class="subtitle has-text-centered">Real vs. WorldEval success rates.WorldEval evaluation setup shows a strong correlation
+        to real policy performance. Good policy evaluation proxies have low MMRV and high Pearson
+        correlation (r).
+      </h2>
+    </div>
+    <div class="hero-body">
+      <img style="width: 40%;" src="static/images/res1.png" alt="teaser" />
+      <h2 class="subtitle has-text-centered">WorldEval vs. Real-to-Sim evaluation.
+        WorldEval achieves the lowest MMRV (↓) and
+        highest Pearson r (↑), outperforming real-to-sim
+      </h2>
+    </div>
+    <div class="hero-body">
+      <img style="width: 40%;" src="static/images/res2.png" alt="teaser" />
+      <h2 class="subtitle has-text-centered">Policy2Vec versus other encoding
+        methods We report the Pearson correlation (r),
+        MMRV (↓), FID score (↓), and eventual rank
+        across five tasks. Our proposed Policy2Vec
+        achieves the best overall performance.
+      </h2>
+    </div>
+  </div>
+</section>
 
 <!--BibTex citation -->
 <section class="section" id="BibTeX">
