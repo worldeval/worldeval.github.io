@@ -499,7 +499,9 @@
         <div style="display: flex; justify-content: center; width: 100%;">
             <div style="display: flex; flex-direction: row; align-items: center; width: 100%;">
                 <div style="background-color: #f0fdf4; margin-right: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
-                    <span><span style="font-weight: bold;">Instruction</span>:Collect the toy to the right tray</span>
+                    <span><span style="font-weight: bold;">Instruction</span>:Collect the toy to the right tray. 
+                      <span style="color: #fff; background: #e74c3c; font-weight: bold; border-radius: 0.3em; padding: 0.1em 0.5em; margin-left: 0.5em;">not in train data</span>
+                    </span>
                 </div>
                 <div style="background-color: #f0fdf4; margin-left: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
                     <span><span style="font-weight: bold;">Instruction</span>:Place the empty blue cup to the cup mat.</span>
@@ -664,7 +666,9 @@
         <div style="display: flex; justify-content: center; width: 100%;">
             <div style="display: flex; flex-direction: row; align-items: center; width: 100%;">
                 <div style="background-color: #f0fdf4; margin-right: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
-                    <span><span style="font-weight: bold;">Instruction</span>:Collect the toy to the right tray.</span>
+                    <span><span style="font-weight: bold;">Instruction</span>:Collect the toy to the right tray. 
+                      <span style="color: #fff; background: #e74c3c; font-weight: bold; border-radius: 0.3em; padding: 0.1em 0.5em; margin-left: 0.5em;">not in train data</span>
+                    </span>
                 </div>
                 <div style="background-color: #f0fdf4; margin-left: 0.5rem; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; height: 100%; width: 50%;">
                     <span><span style="font-weight: bold;">Instruction</span>:Place the empty blue cup to the cup mat.</span>
@@ -694,7 +698,7 @@
                   <span style="position: absolute; top: 0.125rem; left: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">real world</span>
               </div>
               <div style="flex: 1; margin-left: 0.5rem; border-radius: 0.5rem; overflow: hidden; position: relative; aspect-ratio: 16/9;">
-                  <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/strike_block/fail/dex_gen_0519.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                  <video controls webkit-playsinline playsinline loop autoplay muted src="static/videos/strike_block/fail/strike_block_dex_gen_0520.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
                   <span style="position: absolute; bottom: 0.125rem; right: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: #44403c; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">1x</span>
                   <span style="position: absolute; top: 0.125rem; left: 0.125rem; background-color: rgba(241, 245, 249, 0.7); color: red; font-size: small; padding: 0.25rem; border-radius: 0.375rem;">generated video</span>
               </div>
@@ -761,25 +765,17 @@
   <div class="container is-max-desktop" style="text-align: center;">
     <div class="hero-body">
       <img style="width: 70%;" src="static/images/f4.png" alt="teaser" />
-      <h2 class="subtitle has-text-centered">Real vs. WorldEval success rates.WorldEval evaluation setup shows a strong correlation
-        to real policy performance. Good policy evaluation proxies have low MMRV and high Pearson
-        correlation (r).
+      <h2 class="subtitle has-text-centered">Real vs. WorldEval success rates.
       </h2>
     </div>
     <div class="hero-body">
       <img style="width: 40%;" src="static/images/res1.png" alt="teaser" />
       <h2 class="subtitle has-text-centered">WorldEval vs. Real-to-Sim evaluation.
-        WorldEval achieves the lowest MMRV (↓) and
-        highest Pearson r (↑), outperforming real-to-sim
       </h2>
     </div>
     <div class="hero-body">
       <img style="width: 40%;" src="static/images/res2.png" alt="teaser" />
-      <h2 class="subtitle has-text-centered">Policy2Vec versus other encoding
-        methods We report the Pearson correlation (r),
-        MMRV (↓), FID score (↓), and eventual rank
-        across five tasks. Our proposed Policy2Vec
-        achieves the best overall performance.
+      <h2 class="subtitle has-text-centered">Policy2Vec versus other encoding methods.
       </h2>
     </div>
   </div>
